@@ -30,11 +30,11 @@
 <main>
   <h1>Privacy Policy for Well Slept</h1>
   <p><strong>Last updated: 22 November 2026</strong></p>
-  <p>Well Slept is a sleep debt tracker. This policy explains what the app does with your information. The short version: your data stays on your phone unless you choose to sign in. If you sign in, it is backed up to your account so you can get it back on a new phone. It is never sold, never used for ads, and never used for analytics.</p>
+  <p>Well Slept is a sleep debt tracker. This policy explains what the app does with your information. The short version: your data stays on your phone unless you choose to sign in or send feedback. If you sign in, it is backed up to your account so you can get it back on a new phone. It is never sold, never used for ads, and never used for analytics.</p>
   <h2>Who we are</h2>
   <p>Well Slept is published by Shelly A. If you have a question about this policy or about your data, email <strong><a href="mailto:wellslept.app@gmail.com">wellslept.app@gmail.com</a></strong>.</p>
   <h2>Without an account</h2>
-  <p>You do not need an account to use Well Slept. If you never sign in, everything you enter is stored only on your device, in the app&#x27;s private storage, and nothing is sent anywhere. If you delete the app, the data on that device goes with it.</p>
+  <p>You do not need an account to use Well Slept. If you never sign in, everything you enter is stored only on your device, in the app&#x27;s private storage, and nothing is sent anywhere unless you send feedback (see Sending feedback below). If you delete the app, the data on that device goes with it.</p>
   <h2>If you sign in: backup</h2>
   <p>Signing in is optional. You sign in with your Google account from Profile &gt; Account. That screen lists what is backed up before you sign in, and nothing is sent until you do.</p>
   <p><strong>What is backed up</strong></p>
@@ -56,7 +56,7 @@
   <ul>
   <li><strong>In the app.</strong> Go to Profile &gt; Account and tap Delete account. It deletes your account and your whole backup from our server straight away.</li>
   <li><strong>Without the app.</strong> Email <strong><a href="mailto:wellslept.app@gmail.com">wellslept.app@gmail.com</a></strong> from the Google address you signed in with, and ask us to delete your account. We delete it within 30 days and reply to say it is done. The steps are also at <a href="https://shelly-a.github.io/well-slept-privacy/delete-account.html">https://shelly-a.github.io/well-slept-privacy/delete-account.html</a>.</li>
-  <li><strong>What is deleted.</strong> Your Google account details as listed above, and everything in your backup. Nothing of your account is kept on our server afterwards.</li>
+  <li><strong>What is deleted.</strong> Your Google account details as listed above, everything in your backup, and any feedback you sent while signed in. Nothing of your account is kept on our server afterwards.</li>
   <li><strong>What stays.</strong> The data on your phone. It stays until you delete it in the app or uninstall the app. Deleting your Well Slept account does not touch your Google account.</li>
   </ul>
   <h2>Health Connect (Android)</h2>
@@ -81,7 +81,15 @@
   <h2>Notifications</h2>
   <p>If you turn on reminders, they are scheduled by your phone, on your phone. Well Slept does not use push notifications, so there is no server sending you anything and no device token is created or shared. Reminders contain only a time of day and a short prompt. Turn them off in the app under Profile &gt; Reminders, or in your phone&#x27;s settings.</p>
   <h2>Sending feedback</h2>
-  <p>&quot;Send feedback&quot; opens your own mail app with a draft to the developer. The draft includes your sleep need, how many nights you have logged, your phone&#x27;s operating system and the app version, and the screen shows you all of this before your mail app opens. Nothing is sent unless you press send, and you can delete any of it first.</p>
+  <p>&quot;Send feedback&quot; lets you write to the developer from inside the app. Nothing is sent until you tap Send, and the screen lists everything that goes with your message first.</p>
+  <ul>
+  <li><strong>What is sent.</strong> Your message, and your email address only if you type one in for a reply. With it go your sleep need, how many nights you have logged, your phone&#x27;s operating system and its version, and the app version, so a problem can be matched to the build you have. If you are signed in, your account ID goes with it so a reply can reach you.</li>
+  <li><strong>Where it goes.</strong> To the same Supabase database as the backup, in the European Union. Only the developer can read it. The app itself cannot read it back, not even your own message.</li>
+  <li><strong>Stopping spam.</strong> To limit how many messages can come from one connection, the server keeps a scrambled, one-way version of your internet connection&#x27;s address for one day, then deletes it. Your address itself is never stored, and the scrambled version cannot be turned back into it.</li>
+  <li><strong>If it cannot be sent.</strong> With no connection, your message is kept on your phone and sent the next time you open the app.</li>
+  <li><strong>How long it is kept.</strong> Until the developer has dealt with it, and at most a year. Feedback sent while signed in is deleted with your account. To have any feedback deleted sooner, email <strong><a href="mailto:wellslept.app@gmail.com">wellslept.app@gmail.com</a></strong>.</li>
+  <li><strong>Email instead.</strong> &quot;Email instead&quot; opens your own mail app with a draft to the developer, with the same details filled in. Nothing is sent unless you press send there, and you can delete any of it first.</li>
+  </ul>
   <h2>Exporting and importing your data</h2>
   <p>&quot;Copy export to clipboard&quot; puts a copy of your data on your clipboard so you can save it or move it to another device. What happens to it after that is up to you, and depends on where you paste it. Well Slept does not upload the export.</p>
   <p>Importing replaces the data in the app with whatever you paste in. If you are signed in, what you import is then backed up too.</p>
