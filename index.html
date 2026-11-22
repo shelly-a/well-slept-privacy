@@ -29,7 +29,7 @@
 <body>
 <main>
   <h1>Privacy Policy for Well Slept</h1>
-  <p><strong>Last updated: 14 November 2026</strong></p>
+  <p><strong>Last updated: 22 November 2026</strong></p>
   <p>Well Slept is a sleep debt tracker. This policy explains what the app does with your information. The short version: your data stays on your phone unless you choose to sign in. If you sign in, it is backed up to your account so you can get it back on a new phone. It is never sold, never used for ads, and never used for analytics.</p>
   <h2>Who we are</h2>
   <p>Well Slept is published by Shelly A. If you have a question about this policy or about your data, email <strong><a href="mailto:wellslept.app@gmail.com">wellslept.app@gmail.com</a></strong>.</p>
@@ -40,13 +40,13 @@
   <p><strong>What is backed up</strong></p>
   <ul>
   <li><strong>Your Google account details:</strong> your name, email address and profile picture link, and an account ID. Google gives us these when you sign in, and they are how you sign in again.</li>
-  <li><strong>Your nights:</strong> the date, bedtime, wake time, how long you slept, time spent awake in bed, whether it was a nap, and how rested you felt. This includes nights read from Health Connect, along with the ID Health Connect gave each one and when your tracker last changed it.</li>
+  <li><strong>Your nights:</strong> the date, bedtime, wake time, how long you slept, time spent awake in bed, whether it was a nap, and how rested you felt. This includes nights read from Health Connect, along with the ID Health Connect gave each one and when your tracker last changed it. It also includes nights you confirmed from a sleep guess. Guesses you have not confirmed are never backed up.</li>
   <li><strong>Your sleep profile:</strong> your sleep need and every change to it, your wake goal, and whether your wake time varies.</li>
   <li><strong>Your settings:</strong> which timeline windows you show and which reminders you have on.</li>
   <li><strong>Your routine:</strong> the supplements and medication you have added, with the dose as you wrote it, when you take them, and whether they remind you.</li>
   <li><strong>When each of these last changed.</strong> For a night you delete, only its ID and when you deleted it are kept, so the deletion reaches your other phones. The night itself is removed from the backup.</li>
   </ul>
-  <p><strong>What is not backed up:</strong> your Health Connect connection and permissions, light or dark mode, the app language, and anything else that only describes one phone.</p>
+  <p><strong>What is not backed up:</strong> your Health Connect connection and permissions, whether the sleep guess is on, sleep guesses you have not confirmed, light or dark mode, the app language, and anything else that only describes one phone.</p>
   <p><strong>When.</strong> When you open the app, and a few seconds after you change something, while you are signed in. Never in the background.</p>
   <p><strong>Where.</strong> The backup is stored by Supabase, the database service this app uses, on servers in the European Union. Supabase processes it only to run the backup for us, under a data processing agreement. It is encrypted when it travels between your phone and the server, and while it is stored.</p>
   <p><strong>Who can see it.</strong> Your account can read only its own backup. No other user can see it. We do not read your backup, except when you ask us to help with a problem with your account, when it is needed to keep the service secure, or when the law requires it.</p>
@@ -63,10 +63,20 @@
   <p>Well Slept can read sleep data from Health Connect, which is where Samsung Health, Garmin Connect, Fitbit and most other trackers store the sleep they record.</p>
   <ul>
   <li><strong>What we read.</strong> Sleep sessions only: their start and end times and their sleep stages. Nothing else. Well Slept never writes to Health Connect.</li>
-  <li><strong>When we read it.</strong> When you tap &quot;Sync sleep now&quot;, and once a day when you open the app, but only after you have granted permission in Health Connect. Well Slept does not read in the background and does not read while you are not using the app.</li>
+  <li><strong>When we read it.</strong> When you tap &quot;Sync sleep now&quot;, and once a day when you open the app, but only after you have granted permission in Health Connect. Well Slept does not read Health Connect in the background and does not read it while you are not using the app.</li>
   <li><strong>Where it goes.</strong> Onto your device, into the same storage as everything else. If you sign in, these nights are included in your backup like the nights you log yourself, so they come back on a new phone. They do not go anywhere else.</li>
   <li><strong>What it is used for.</strong> Working out your sleep debt, your timeline and your progress, and, if you sign in, keeping them in your backup. Nothing else. Health Connect data is never used for advertising or marketing, and is never sold or shared.</li>
   <li><strong>How to stop it.</strong> Revoke the permission in Health Connect at any time, under Health Connect &gt; App permissions &gt; Well Slept. Sleep already imported stays in the app, and in your backup if you are signed in, until you delete it.</li>
+  </ul>
+  <h2>Sleep guess from your phone (Android)</h2>
+  <p>If you do not wear a tracker, Well Slept can guess when you slept from your phone. This is off until you turn it on. Before you do, the app shows you what it reads and asks for the Physical activity permission.</p>
+  <ul>
+  <li><strong>How it works.</strong> Android&#x27;s activity recognition, part of Google Play services, uses your phone&#x27;s motion and light sensors to spot when you were probably asleep. It does this on your phone. Well Slept never sees the sensor readings. It gets only the start and end time of each likely sleep.</li>
+  <li><strong>When it arrives.</strong> Android sends the guess once a day, after you wake up. It can arrive while the app is closed. This is the only thing Well Slept receives in the background.</li>
+  <li><strong>Where it goes.</strong> A guess is saved on your phone only. It is not backed up, not included in your export, and not sent to us, to Google or to anyone else.</li>
+  <li><strong>What happens next.</strong> The next time you open the app, it asks you to check the guess. If you save it, with or without changing the times, it becomes a night like one you log yourself. If you are signed in, that night is backed up. If your tracker later sends its own record of the same sleep through Health Connect, that record replaces the saved guess. If you dismiss the guess, it is deleted. A guess you do not check is deleted after 7 days.</li>
+  <li><strong>What it is used for.</strong> Only to suggest a night for you to save. A guess never counts toward your sleep debt until you save it.</li>
+  <li><strong>How to stop it.</strong> Turn it off in Profile &gt; Sleep guess. You can also remove the Physical activity permission in your phone&#x27;s settings. Either way, guesses you have not checked are deleted. Nights you already saved stay until you delete them.</li>
   </ul>
   <h2>Notifications</h2>
   <p>If you turn on reminders, they are scheduled by your phone, on your phone. Well Slept does not use push notifications, so there is no server sending you anything and no device token is created or shared. Reminders contain only a time of day and a short prompt. Turn them off in the app under Profile &gt; Reminders, or in your phone&#x27;s settings.</p>
@@ -79,6 +89,8 @@
   <ul>
   <li><strong>Notifications</strong>, only if you turn a reminder on.</li>
   <li><strong>Health Connect sleep access</strong>, only if you use the Health Connect sync.</li>
+  <li><strong>Physical activity</strong>, only if you turn on the sleep guess (Android 10 and later).</li>
+  <li><strong>Run at startup</strong> (Android), so your reminders and the sleep guess keep working after your phone restarts or the app updates. For the sleep guess, it does nothing unless the sleep guess is on.</li>
   </ul>
   <p>Signing in uses your Google account through Android&#x27;s own sign-in screen. Well Slept never sees your Google password. It does not use your location, camera, microphone, contacts or files.</p>
   <h2>Children</h2>
