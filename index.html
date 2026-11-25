@@ -35,21 +35,22 @@
   <h2>Who we are</h2>
   <p>Well Slept is published by Shelly A. If you have a question about this policy or about your data, email <strong><a href="mailto:wellslept.app@gmail.com">wellslept.app@gmail.com</a></strong>.</p>
   <h2>Without an account</h2>
-  <p>You do not need an account to use Well Slept. If you never sign in, everything you enter is stored only on your device, in the app&#x27;s private storage, and nothing is sent anywhere unless you send feedback (see Sending feedback below). If you delete the app, the data on that device goes with it.</p>
+  <p>You do not need an account to use Well Slept. If you never sign in, everything you enter is stored only on your device, in the app&#x27;s private storage, and nothing is sent anywhere unless you send feedback (see Sending feedback below). If you delete the app, the data on that device goes with it. Android can copy apps&#x27; data to your Google account. Well Slept turns that off. Some phones still copy apps&#x27; data when you move straight from one phone to another.</p>
   <h2>If you sign in: backup</h2>
   <p>Signing in is optional. You sign in with your Google account from Profile &gt; Account. That screen lists what is backed up before you sign in, and nothing is sent until you do.</p>
   <p><strong>What is backed up</strong></p>
   <ul>
   <li><strong>Your Google account details:</strong> your name, email address and profile picture link, and an account ID. Google gives us these when you sign in, and they are how you sign in again.</li>
-  <li><strong>Your nights:</strong> the date, bedtime, wake time, how long you slept, time spent awake in bed, whether it was a nap, and how rested you felt. This includes nights read from Health Connect, along with the ID Health Connect gave each one and when your tracker last changed it. It also includes nights you confirmed from a sleep guess. Guesses you have not confirmed are never backed up.</li>
-  <li><strong>Your sleep profile:</strong> your sleep need and every change to it, your wake goal, and whether your wake time varies.</li>
+  <li><strong>Your nights:</strong> the date, bedtime, wake time, how long you slept, time spent awake in bed, whether it was a nap, and how rested you felt. This includes nights read from Health Connect, along with the ID Health Connect gave each one and when your tracker last changed it. If you changed a night your tracker recorded, the tracker&#x27;s version is kept with it, so you can go back to it. It also includes nights you confirmed from a sleep guess. Guesses you have not confirmed are never backed up.</li>
+  <li><strong>Your sleep profile:</strong> your sleep need, whether you set it yourself, every change to it, your wake goal, and whether your wake time varies.</li>
   <li><strong>Your settings:</strong> which timeline windows you show and which reminders you have on.</li>
-  <li><strong>Your routine:</strong> the supplements and medication you have added, with the dose as you wrote it, when you take them, and whether they remind you.</li>
+  <li><strong>Your routine:</strong> the supplements and medication you have added, with the dose as you wrote it, when you take them, whether with food, whether they remind you, and the colour and icon you chose.</li>
   <li><strong>When each of these last changed.</strong> For a night you delete, only its ID and when you deleted it are kept, so the deletion reaches your other phones. The night itself is removed from the backup.</li>
   </ul>
   <p><strong>What is not backed up:</strong> your Health Connect connection and permissions, whether the sleep guess is on, sleep guesses you have not confirmed, light or dark mode, the app language, and anything else that only describes one phone.</p>
   <p><strong>When.</strong> When you open the app, and a few seconds after you change something, while you are signed in. Never in the background.</p>
   <p><strong>Where.</strong> The backup is stored by Supabase, the database service this app uses, on servers in the European Union. Supabase processes it only to run the backup for us, under a data processing agreement. It is encrypted when it travels between your phone and the server, and while it is stored.</p>
+  <p><strong>Technical records.</strong> Like most online services, Supabase keeps some technical records when the app connects to it. With each sign-in it keeps the internet address you signed in from. That record goes when you delete your account. Its request logs, which can also show internet addresses, are kept for a short time. We do not use any of this to work out who or where you are.</p>
   <p><strong>Who can see it.</strong> Your account can read only its own backup. No other user can see it. We do not read your backup, except when you ask us to help with a problem with your account, when it is needed to keep the service secure, or when the law requires it.</p>
   <p><strong>What it is used for.</strong> Only to keep a copy of your data and give it back to you, on this phone or another one. It is never used for advertising, marketing or analytics, never used to decide anything about insurance, credit or employment, and never sold or shared with anyone else, unless the law requires it.</p>
   <p><strong>How long it is kept.</strong> For as long as your account exists. Signing out stops new backups. It leaves your data on your phone and your backup in your account, so you can sign in again later.</p>
@@ -65,7 +66,7 @@
   <ul>
   <li><strong>What we read.</strong> Sleep sessions only: their start and end times and their sleep stages. Nothing else. Well Slept never writes to Health Connect.</li>
   <li><strong>When we read it.</strong> When you tap &quot;Sync sleep now&quot;, and once a day when you open the app, but only after you have granted permission in Health Connect. Well Slept does not read Health Connect in the background and does not read it while you are not using the app.</li>
-  <li><strong>Where it goes.</strong> Onto your device, into the same storage as everything else. If you sign in, these nights are included in your backup like the nights you log yourself, so they come back on a new phone. They do not go anywhere else.</li>
+  <li><strong>Where it goes.</strong> Onto your device, into the same storage as everything else. If you sign in, these nights are included in your backup like the nights you log yourself, so they come back on a new phone. We do not send them anywhere else.</li>
   <li><strong>What it is used for.</strong> Working out your sleep debt, your timeline and your progress, and, if you sign in, keeping them in your backup. Nothing else. Health Connect data is never used for advertising or marketing, and is never sold or shared.</li>
   <li><strong>How to stop it.</strong> Revoke the permission in Health Connect at any time, under Health Connect &gt; App permissions &gt; Well Slept. Sleep already imported stays in the app, and in your backup if you are signed in, until you delete it.</li>
   </ul>
@@ -85,8 +86,8 @@
   <p>&quot;Send feedback&quot; lets you write to the developer from inside the app. Nothing is sent until you tap Send. The screen says that phone and app details go too, and this section lists them.</p>
   <ul>
   <li><strong>What is sent.</strong> Your message, and your email address only if you type one in for a reply. With it go your phone&#x27;s model, its operating system and version, the app version and the app&#x27;s language, so a problem can be matched to the phone and build you have. Nothing about your sleep or your routine is attached. Anything you write in the message yourself is sent as you wrote it. If you are signed in, your account ID goes with it so a reply can reach you.</li>
-  <li><strong>Where it goes.</strong> To the same Supabase database as the backup, in the European Union. Only the developer can read it. The app itself cannot read it back, not even your own message.</li>
-  <li><strong>Stopping spam.</strong> To limit how many messages can come from one connection, the server keeps a scrambled, one-way version of your internet connection&#x27;s address for one day, then deletes it. Your address itself is never stored, and the scrambled version cannot be turned back into it.</li>
+  <li><strong>Where it goes.</strong> To the same Supabase database as the backup, in the European Union. Only the developer reads it, in Israel. The app itself cannot read it back, not even your own message. When a message arrives, the developer&#x27;s phone gets an alert that says only that there is feedback.</li>
+  <li><strong>Stopping spam.</strong> To limit how many messages can come from one connection, the server keeps a scrambled, one-way version of your internet connection&#x27;s address for one day, then deletes it. The address itself is never stored with your message.</li>
   <li><strong>If it cannot be sent.</strong> With no connection, your message is kept on your phone and sent the next time you open the app.</li>
   <li><strong>How long it is kept.</strong> Until the developer has dealt with it, and at most a year. Feedback sent while signed in is deleted with your account. To have any feedback deleted sooner, email <strong><a href="mailto:wellslept.app@gmail.com">wellslept.app@gmail.com</a></strong>.</li>
   <li><strong>Email instead.</strong> &quot;Email instead&quot; opens your own mail app with a draft to the developer, with the same phone and app details filled in. Nothing is sent unless you press send there, and you can delete any of it first. It arrives in a Gmail inbox, so Google handles it under its own privacy policy. To have an email deleted, ask us.</li>
@@ -101,7 +102,7 @@
   <li><strong>Physical activity</strong>, only if you turn on the sleep guess (Android 10 and later).</li>
   <li><strong>Run at startup</strong> (Android), so your reminders and the sleep guess keep working after your phone restarts or the app updates. For the sleep guess, it does nothing unless the sleep guess is on.</li>
   </ul>
-  <p>Signing in uses your Google account through Android&#x27;s own sign-in screen. Well Slept never sees your Google password. It does not use your location, camera, microphone, contacts or files.</p>
+  <p>Signing in uses your Google account through Android&#x27;s own sign-in screen. Well Slept never sees your Google password. It does not use your location, camera, microphone or contacts. It does not look through your files. It opens or saves only an export file you choose.</p>
   <h2>Age</h2>
   <p>Well Slept is for adults, aged 18 and over. We do not knowingly collect information from anyone younger. If you believe someone under 18 has signed in or sent feedback, email us and we will delete their account, backup and messages.</p>
   <h2>Your rights</h2>
@@ -115,10 +116,11 @@
     <li><strong>Backup:</strong> your consent. Your nights and routine count as health information, which the GDPR treats as sensitive. That is why you tick a box saying you agree, before you can sign in.</li>
     <li><strong>Feedback:</strong> our legitimate interest in answering you and fixing problems in the app. You choose to send it.</li>
     <li><strong>The scrambled address that stops spam:</strong> our legitimate interest in keeping the feedback service working. It is deleted after one day.</li>
+    <li><strong>Technical records:</strong> our legitimate interest in keeping the service secure and working.</li>
     <li><strong>Account deletion requests:</strong> the law requires us to act on them. We keep a record of your request only as long as we need to show it was done.</li>
   </ul>
-  <p><strong>Who processes it for us.</strong> Supabase stores the backup and feedback in the EU, under a data processing agreement, using its own approved service providers. Google handles signing in, under Google's own privacy policy. No one else receives your data.</p>
-  <p><strong>Data outside the EU.</strong> Your backup is stored in the EU. If we read it, for example to help with your account, that happens in Israel. The European Commission and the UK recognise Israel as protecting personal data to the same standard. If we ever move the backup to another provider or another country, we will update this policy and tell you in the app first, and use the safeguards the law requires.</p>
+  <p><strong>Who processes it for us.</strong> Supabase stores the backup and feedback in the EU, under a data processing agreement, using its own approved service providers. Google handles signing in, under Google's own privacy policy. Google Play also shows us figures about installs and crashes, which Google collects under its own privacy policy. We do not see who they are about, unless you write to us through Google Play. No one else receives your data from us.</p>
+  <p><strong>Data outside the EU.</strong> Your backup and your feedback are stored in the EU. We read feedback in Israel. If we read your backup, for example to help with your account, that happens in Israel too. The European Commission and the UK recognise Israel as protecting personal data to the same standard. If we ever move the backup to another provider or another country, we will update this policy and tell you in the app first, and use the safeguards the law requires.</p>
   <p><strong>Your rights.</strong> You can ask us to:</p>
   <ul>
     <li>show you a copy of the data we hold about you</li>
